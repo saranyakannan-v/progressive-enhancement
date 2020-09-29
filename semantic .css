@@ -1,9 +1,7 @@
 body {
-    line-height: 1.6;
-    /*reccommended line height*/
     width: 90%;
     margin: auto;
-    font-family: Sans-Serif, Helvetica, Arial;
+    font-family: "Open Sans", sans-serif;
     background: -webkit-radial-gradient(rgb(189, 221, 126), rgb(113, 161, 150));
     background: radial-gradient(rgb(189, 221, 126), rgb(113, 161, 150));
     /*background-image: url("bg1.jpg");*/
@@ -13,6 +11,18 @@ body {
     /*background-position: bottom right;*/
     background-repeat: no-repeat;
     color: #333;
+}
+
+
+/*used child selector >*/
+
+body>blockquote {
+    /*reccommended line height*/
+    line-height: 1.6;
+}
+
+body>h1 {
+    background-color: yellow;
 }
 
 a {
@@ -52,6 +62,7 @@ blockquote {
 }
 
 q {
+    font-style: italic;
     font-size: 160%;
     background-color: lightslategray;
     border-left: 3px dotted black;
@@ -73,9 +84,51 @@ td {
     padding: 20px;
 }
 
+th {
+    background: #CCC
+}
+
+tr:nth-child(even) {
+    background: #CCC
+}
+
+tr:nth-child(odd) {
+    background: #FFF
+}
+
 p {
     letter-spacing: 0.9px;
     color: darkred;
     font-size: 18px;
     font-family: serif;
+}
+
+.good {
+    text-transform: capitalize;
+    color: green
+}
+
+.bad {
+    text-transform: capitalize;
+    color: red
+}
+
+#notification {
+    /*background-color: #0b5c87;*/
+    background-color: rgb(21 79 129 / 62%);
+    color: #fff;
+    padding: 15px;
+    font-family: sans-serif;
+    width: 30%;
+    text-align: center;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#notification q,
+#notification .end {
+    color: #fea604;
+    font-weight: 600;
 }
