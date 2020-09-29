@@ -1,0 +1,81 @@
+body {
+    line-height: 1.6;
+    /*reccommended line height*/
+    width: 90%;
+    margin: auto;
+    font-family: Sans-Serif, Helvetica, Arial;
+    background: -webkit-radial-gradient(rgb(189, 221, 126), rgb(113, 161, 150));
+    background: radial-gradient(rgb(189, 221, 126), rgb(113, 161, 150));
+    /*background-image: url("bg1.jpg");*/
+    /*background-size: 100%;*/
+    background-position: center;
+    background-size: cover;
+    /*background-position: bottom right;*/
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+a {
+    /*text-decoration: none;*/
+    font-style: italic;
+}
+
+
+/* unvisited, visited link */
+
+a:link,
+a:visited {
+    color: darkslateblue;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: darkslategrey;
+}
+
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+blockquote {
+    width: 50%;
+    margin: auto;
+}
+
+q {
+    font-size: 160%;
+    background-color: lightslategray;
+    border-left: 3px dotted black;
+    padding-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+table.mytable,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+p {
+    letter-spacing: 0.9px;
+    color: darkred;
+    font-size: 18px;
+    font-family: serif;
+}
